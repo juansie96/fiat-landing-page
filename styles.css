@@ -2,6 +2,11 @@
 
 body {
     font-family: 'Exo 2', 'Open-Sans', sans-serif;
+    background-color: #333;
+}
+
+*,*:before,*:after {
+    -webkit-appearance: none;
 }
 
 /* ------------- Estilo del MENU PRINCIPAL -------------- */
@@ -64,6 +69,7 @@ body {
     padding-right: 5px;
 }
 .productos {
+    color: #fff;
     margin-top: 100px;
     margin-left: 5%;
 }
@@ -101,14 +107,11 @@ body {
     margin-bottom: 10px;
 }
 
-/* ------------- PARTE DE EUGE --------------*/
+/* ------------- FORMULARIO --------------*/
 @import url(https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400);
 /* VARS */
 .container {
     background-color: #333333;
-}
-*, *:before, *:after {
-  box-sizing: border-box;
 }
 
 form {
@@ -176,7 +179,6 @@ form .field select {
     color: #870A30;
     outline: 0;
     background-color: #ffffff;
-
 }
 
 form .field textarea {
@@ -203,32 +205,7 @@ input.button:hover {
     background-color: #870A30;
     cursor: pointer;
 }
-@media  (max-width:425px){
-    .container {
-        max-width: 85%;
-    }
-    form .field.half {
-        width: 100%;
-    }
-    form .field label {
-        font-size: 0.9rem;
-        padding: 0.5rem 1rem 0;
-        font-weight: 600;
-    }
-    form .field.last {
-        border-left: 1px solid white;
-      }
-    form .field select {
-        font-size: 1rem;
-        padding: 1.5rem 1rem 1.5rem;
 
-    }
-    input.button {
-        width: 100%;
-        margin-left: 0;
-    }
-      
-}
 
 /* ------------- FOOTER --------------*/
 
@@ -261,4 +238,36 @@ input.button:hover {
         width: 0;
         height: 0;
     }
+}
+
+@media (max-width:425px) {
+    .container {
+        max-width: 85%;
+    }
+
+    form .field.half {
+        width: 100%;
+    }
+
+    form .field label {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem 0;
+        font-weight: 600;
+    }
+
+    form .field.last {
+        border-left: 1px solid white;
+    }
+
+    form .field select {
+        font-size: 1rem;
+        padding: 1.5rem 1rem 1.5rem;
+
+    }
+
+    input.button {
+        width: 100%;
+        margin-left: 0;
+    }
+
 }
