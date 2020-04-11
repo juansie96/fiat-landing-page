@@ -55,68 +55,179 @@ body {
     display: flex;
     justify-content: space-around;
 }
-
+.list-group-item{
+    margin-left: 16%;
+    justify-content: center;
+    border: none;
+}
+.imgcards {
+    padding-right: 5px;
+}
 .productos {
     margin-top: 100px;
     margin-left: 5%;
 }
-
-.rojo {
-    color: red;
+.pie {
+    background-color: #870a30;
+    display: flex;
+    flex-direction: column;
+}
+.card-link + p {
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+}
+.card-text {
+    width: 90%;
+    margin-left: 10%;
+}
+.card-link {
+    text-align: center;
+    color: white;
+}
+.card-link:hover
+{
+    color: black;
+}
+.card {
+    box-shadow: 0px 0px 10px #000000;
+    border:0;
+}
+.card-title {
+    text-align: center;
+    color: #870a30;
+}
+.list-group-item:last-child {
+    margin-bottom: 10px;
 }
 
 /* ------------- PARTE DE EUGE --------------*/
-.formulario {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
+@import url(https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400);
+/* VARS */
+.container {
+    background-color: #333333;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-.col {
-    margin-top: 1rem !important;
+form {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 62.5%;
 }
 
-.custom-select {
-    margin-left: 1rem;
+.container {
+  margin: 5rem auto;
+  max-width: 65%;
+}
+
+form {
+  margin: 2rem 0;
+}
+form:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+form .field {
+  display: block;
+  border: 1px solid #ffffff;
+  float: left;
+  width: 100%;
+}
+form .field.tnb {
+  border-top: 0;
+}
+form .field.half {
+  width: 50%;
+}
+form .field.last {
+  border-left: 0;
+}
+form .field label {
+  display: block;
+  font-size: 1rem;
+  padding: 1rem 2rem 0;
+  text-transform: uppercase;
+  color: #ffff;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+form .field input,
+form .field textarea {
+    font-family: 'Exo 2', sans-serif;
+    display: block;
+    width: 100%;
+    padding: .1rem 2rem 1rem;
+    font-size: 0.9rem;
+    border: 0;
+    color: #ffffff;
+    outline: 0;
+    background-color: #333333;
+}
+form .field select {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 2.5rem 2rem 2.5rem;
+    border: 0;
+    color: #870A30;
+    outline: 0;
+    background-color: #ffffff;
 
 }
 
-.area,
-form-control {
-    margin-top: 1rem !important;
-    margin-left: 1rem;
-
+form .field textarea {
+  min-height: 150px;
+  resize: vertical;
+  font-family: 'Exo 2', sans-serif;
 }
-
-.btn btn-primary,
-.btn-primary {
-    background-color: black;
-    color: white;
-    margin-top: 1rem !important;
-    margin-left: 1rem;
-}
-
-#form {
-    padding-top: 80px;
-    width: 50%;
-    margin: auto;
-}
-
-#form .container {
-    box-shadow: 0 3px 5px #eee;
-    border: 1px solid #ccc;
-    padding: 15px;
-    border-radius: 3%;
-}
-
-.formulario .col {
-    display: inline-block;
-    width: 50%;
-}
-
-.custom-select {
+input.button {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     margin-top: 20px;
-    width: 90%;
+    background-color: #333333;
+    padding: 1rem 2rem 1rem;
+    color: white;
+    display: block;
+    border: 1px solid #ffffff;
+    float: left;
+    width: 30%;
+    margin-right: auto;
+    margin-left: 70%;
+}
+input.button:hover {
+    background-color: #870A30;
+    cursor: pointer;
+}
+@media  (max-width:425px){
+    .container {
+        max-width: 85%;
+    }
+    form .field.half {
+        width: 100%;
+    }
+    form .field label {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem 0;
+        font-weight: 600;
+    }
+    form .field.last {
+        border-left: 1px solid white;
+      }
+    form .field select {
+        font-size: 1rem;
+        padding: 1.5rem 1rem 1.5rem;
+
+    }
+    input.button {
+        width: 100%;
+        margin-left: 0;
+    }
+      
 }
 
 /* ------------- FOOTER --------------*/
