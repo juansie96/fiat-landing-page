@@ -146,24 +146,24 @@ form .field.last {
 }
 form .field label {
   display: block;
-  font-size: 1.2rem;
-  padding: 1.5rem 2rem 0;
+  font-size: 1rem;
+  padding: 1rem 2rem 0;
   text-transform: uppercase;
   color: #ffff;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 form .field input,
 form .field textarea {
-  font-family: 'Exo 2', sans-serif;
-  display: block;
-  width: 100%;
-  padding: .5rem 2rem 1.5rem;
-  font-size: 1.2rem;
-  border: 0;
-  color: #ffffff;
-  outline: 0;
-  background-color: #333333
+    font-family: 'Exo 2', sans-serif;
+    display: block;
+    width: 100%;
+    padding: .1rem 2rem 1rem;
+    font-size: 0.9rem;
+    border: 0;
+    color: #ffffff;
+    outline: 0;
+    background-color: #333333;
 }
 form .field select {
     font-family: 'Exo 2', sans-serif;
