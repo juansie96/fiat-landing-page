@@ -55,14 +55,50 @@ body {
     display: flex;
     justify-content: space-around;
 }
-
+.list-group-item{
+    margin-left: 16%;
+    justify-content: center;
+    border: none;
+}
+.imgcards {
+    padding-right: 5px;
+}
 .productos {
     margin-top: 100px;
     margin-left: 5%;
 }
-
-.rojo {
-    color: red;
+.pie {
+    background-color: #870a30;
+    display: flex;
+    flex-direction: column;
+}
+.card-link + p {
+    margin-bottom: 0px;
+    text-align: center;
+    color: white;
+}
+.card-text {
+    width: 90%;
+    margin-left: 10%;
+}
+.card-link {
+    text-align: center;
+    color: white;
+}
+.card-link:hover
+{
+    color: black;
+}
+.card {
+    box-shadow: 0px 0px 10px #000000;
+    border:0;
+}
+.card-title {
+    text-align: center;
+    color: #870a30;
+}
+.list-group-item:last-child {
+    margin-bottom: 10px;
 }
 
 /* ------------- PARTE DE EUGE --------------*/
