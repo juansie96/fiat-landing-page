@@ -170,42 +170,41 @@
 
     <!-- --------------- CONTACTO ------------- -->
 
-    <section id="form">
-        <div>
-            <h2>Indique su consulta</h2>
-        </div>
-        <div class="container">
-            
-            <form id="Contacto">
-                <div class="formulario">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre y Apellido">
-                    </div>
-                    <br>
-                    <div class="col">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <br>
-                    <div class="col">
-                        <input type="tel" class="form-control" placeholder="Teléfono">
-                    </div>
-                    <br>
-                </div>
-                <select class="custom-select">
-                    <option selected>Seleccioná el modelo</option>
-                    <option value="1">Fiat 500</option>
-                    <option value="2">Fiar Argo</option>
-                    <option value="3">Fiat Toro</option>
-                    <option value="3">Fiat Cronos</option>
-                </select>
-
-                <label for="exampleFormControlTextarea1" class="area">Consultas extras...</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
+    <div class="container">
+        <form>
+          <div class="field half">
+            <label for="surname">Nombre</label>
+            <input type="text" id="surname"/>
+          </div>
+          <div class="field half last">
+            <label for="name">Apellido</label>
+            <input type="text" id="name"/>
+          </div>
+          <div class="field half">
+            <label email="surname">Email</label>
+            <input type="email" id="email"/>
+          </div>
+          <div class="field half last">
+            <label for="Teléfono">Teléfono</label>
+            <input type="tel" id="tel"/>
+          </div>
+          <div class="field tnb">
+            <!-- <label for="x">Seleccioná tu modelo</label> -->
+            <select name="select" id="x">
+            <option value="Seleccioná" disabled selected>Seleccioná tu modelo</option>
+            <option value="500 XL">500 XL</option>
+            <option value="500 XL">ARGO</option>
+            <option value="500 XL">TORO</option>
+            <option value="500 XL">CRONOS</option>
+          </select>
+          </div>
+          <div class="field tnb">
+            <label for="msg">Mensaje</label>
+            <textarea name="msg"></textarea>
+          </div>
+          <input type="submit" value="enviar" class="button">
+        </form>
+      </div>
 
 
     <!-- --------------- Footer Franco ------------- -->
