@@ -58,6 +58,13 @@ body {
 .contenedor-cards {
     margin-top: 50px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.card-grupo {
+    display: flex;
+    width: 50%;
     justify-content: space-around;
 }
 .list-group-item{
@@ -270,4 +277,36 @@ input.button:hover {
         margin-left: 0;
     }
 
+}
+@media (max-width:1300px) {
+    .contenedor-cards {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .card-grupo {
+        display: flex;
+        width: 100%;
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width:700px) {
+    .contenedor-cards {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .card-grupo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 0px;
+    }
+    .card {
+        margin: 10px 0px 0px 0px;
+    }
 }
