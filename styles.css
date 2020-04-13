@@ -297,6 +297,16 @@ input.button:hover {
         width: 0;
         height: 0;
     }
+
+
+    /* ACA VA EL FOOTER RESPONSIVE */
+
+    .footer-nav {
+        width: 100%;
+    }
+
+
+    /* LLEGA HASTA ACA */
 }
 
 
