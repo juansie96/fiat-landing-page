@@ -332,7 +332,7 @@ input.button:hover {
 }
 
 
-@media (max-width:425px) {
+@media (max-width:700px) {
     .container {
         max-width: 85%;
     }
